@@ -18,6 +18,30 @@ void setup() {
     
   }
   Serial.println("El dia es " + nombreDia);
+  digitalWrite(2,HIGH);
+  delay(1000);
+
+  int nota = 5;
+  String calif = "";
+
+  switch(nota){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    calif = "Suspendido";
+    break;
+    case 5 ... 6:
+    calif = "Aprobado";
+    break;
+    default:
+    calif = "error";
+    break;
+    
+
+  }
+
+Serial.println("El dia es " + calif);
 
 
 }
