@@ -1,25 +1,27 @@
-#define trece 13
-#define dos 2
-#define cuatro 4
 
-void setup() {
+void setup(){
+
 Serial.begin(115200);
-delay(1000);
-  
-pinMode(trece, INPUT);
-pinMode(dos, OUTPUT);
-pinMode(cuatro, OUTPUT);
+delay(5000);
 
+// bucles WHILE
+int limite = 10;
+int contador = 0;
+pinMode(15,OUTPUT);
+
+while(contador < limite){
+  Serial.print("While");
+  Serial.println(contador);
+  digital.Write(15, HIGH);
+  contador ++;
+}
 
 
 }
 
-void loop() {
 
-  digitalWrite(cuatro, HIGH);
-  digitalWrite(dos, LOW);
-  
-} 
+
+void loop() {} 
 
 
 
