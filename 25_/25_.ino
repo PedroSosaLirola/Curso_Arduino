@@ -13,7 +13,7 @@ void setup() {
   dht.begin();
   delay(5000);
 
-  pinMode(13, INPUT);
+//  pinMode(13, INPUT);
   pinMode(12, OUTPUT);
 }
 
